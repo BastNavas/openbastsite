@@ -64,7 +64,7 @@ Please change the parent <Route path="${A}"> to <Route path="${A==="/"?"*":`${A}
           py-5 space-y-2 md:space-y-0 md:space-x-2
           font-medium shadow-2xl md:shadow-none
         `,children:[f.jsx(Zi,{to:"/",end:!0,className:({isActive:l})=>`${n} ${l?s:i}`,children:"Inicio"}),f.jsx(Zi,{to:"/grafic",className:({isActive:l})=>`${n} ${l?s:i}`,children:"Diseño gráfico"}),f.jsx(Zi,{to:"/multimedia",className:({isActive:l})=>`${n} ${l?s:i}`,children:"Multimedia"}),f.jsx(Zi,{to:"/acercade",className:({isActive:l})=>`${n} ${l?s:i}`,children:"Acerca de"})]})]})};function V9(){function e(){const[n,s]=w.useState(!1);return w.useEffect(()=>{const i=document.getElementById("nav-sentinel"),l=new IntersectionObserver(([u])=>{s(!u.isIntersecting)},{root:null,threshold:0});return i&&l.observe(i),()=>{i&&l.unobserve(i)}},[]),n}const t=e();return f.jsx("div",{className:`
-        fixed top-0 left-0 w-full h-16 z-50
+        fixed top-0 left-0 w-full h-24 z-50
         transition-transform duration-1000 ease-in-out
         ${t?"-translate-y-full":"translate-y-0"}
         bg-gradient-to-t from-slate-950 to-slate-900
